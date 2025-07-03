@@ -1,4 +1,4 @@
-import { typesCardData,TripData} from "../Data/TripCardData";
+import { typesCardData} from "../Data/TripCardData";
 import {
   Card,
   CardMedia,
@@ -74,7 +74,7 @@ export default function TripPage() {
             gap: 5,
           }}
         >
-          {typesCardData.map((data: TripData, idx: number) => (
+          {typesCardData.map((data, idx: number) => (
             <Card
               key={idx}
               sx={{
