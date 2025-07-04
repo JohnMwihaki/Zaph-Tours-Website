@@ -190,7 +190,7 @@ export default function HomePage() {
                   src="./about-us.png"
                   alt="Tour Guide"
                   sx={{
-                    width: 400,
+                    width: {xs:'100%',md:'400px'},
                     height: 200,
                     objectFit: "cover",
                     borderRadius: 2,
@@ -253,7 +253,7 @@ export default function HomePage() {
                   src="./mission.jpg"
                   alt="Mission Photo"
                   sx={{
-                    width: 400,
+                    width:{xs:'100%',md:'400px'},
                     height: 200,
                     objectFit: "cover",
                     borderRadius: 2,
@@ -312,7 +312,7 @@ export default function HomePage() {
                   src="./vision.jpg"
                   alt="Vision Photo"
                   sx={{
-                    width: 500,
+                    width:{xs:'100%',md:'400px'},
                     height: 200,
                     objectFit: "cover",
                     borderRadius: 2,
