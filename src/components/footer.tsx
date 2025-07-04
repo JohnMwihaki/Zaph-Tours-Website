@@ -42,7 +42,7 @@ export default function Footer() {
             <Stack direction="row" spacing={1}>
               <IconButton
                 component="a"
-                href="https://github.com/john"
+                href="https://github.com/JohnMwihaki"
                 target="_blank"
                 aria-label="GitHub"
                 sx={{ color: "var(--earth-brown)" }}
@@ -51,16 +51,16 @@ export default function Footer() {
               </IconButton>
               <IconButton
                 component="a"
-                href="https://linkedin.com/in/JohnMwihaki"
+                href="https://www.linkedin.com/in/john-mwihaki-b8a11b267/"
                 target="_blank"
                 aria-label="LinkedIn"
                 sx={{ color: "var(--earth-brown)" }}
               >
-                <LinkedInIcon />
+              <LinkedInIcon />
               </IconButton>
               <IconButton
                 component="a"
-                href="https://twitter.com/JohnMwihaki"
+                href="https://github.com/JohnMwihaki"
                 target="_blank"
                 aria-label="Twitter"
                 sx={{ color: "var(--earth-brown)" }}
@@ -69,7 +69,7 @@ export default function Footer() {
               </IconButton>
               <IconButton
                 component="a"
-                href="https://facebook.com/JohnMwihaki"
+                href="https://github.com/JohnMwihaki"
                 target="_blank"
                 aria-label="Facebook"
                 sx={{ color: "var(--earth-brown)" }}

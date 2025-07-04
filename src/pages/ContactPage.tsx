@@ -164,7 +164,7 @@ export default function ContactPage() {
 
           <Stack direction="row" spacing={2} mt={1} px={2}>
             <IconButton
-              href="https://github.com/john"
+              href="https://github.com/JohnMwihaki"
               target="_blank"
               sx={{
                 color: "var(--deep-green)",
@@ -174,7 +174,7 @@ export default function ContactPage() {
               <GitHub />
             </IconButton>
             <IconButton
-              href="https://linkedin.com/JohnMwihaki"
+              href="https://www.linkedin.com/in/john-mwihaki-b8a11b267/"
               target="_blank"
               sx={{
                 color: "var(--deep-green)",
@@ -184,7 +184,7 @@ export default function ContactPage() {
               <LinkedIn />
             </IconButton>
             <IconButton
-              href="https://twitter.com/john"
+              href="https://github.com/JohnMwihaki"
               target="_blank"
               sx={{
                 color: "var(--deep-green)",
@@ -194,7 +194,7 @@ export default function ContactPage() {
               <Twitter />
             </IconButton>
             <IconButton
-              href="https://facebook.com/john"
+              href="https://github.com/JohnMwihaki"
               target="_blank"
               sx={{
                 color: "var(--deep-green)",
