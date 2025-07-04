@@ -20,9 +20,11 @@ export default function Header() {
       sx={{
         backgroundColor: "primary.main",
         p: 1,
+        borderTopLeftRadius:'10px',
+        borderTopRightRadius:'10px'
       }}
     >
-      <Box
+    <Box
         sx={{
           p: 0.5,
           borderRadius: 2,
@@ -37,6 +39,7 @@ export default function Header() {
             justifyContent: "space-between",
             flexWrap: "wrap",
             gap: 1,
+           
           }}
         >
           <Typography
@@ -54,8 +57,8 @@ export default function Header() {
           </Typography>
 
           <Stack
-            direction={{ xs: "column", sm: "row" }}
-            spacing={{ xs: 1, sm: 2 }}
+            direction={{ xs: "column", md: "row" }}
+            spacing={{ xs: 1, md: 2 }}
             sx={{ flexWrap: "wrap", alignItems: "center" }}
           >
             <Button

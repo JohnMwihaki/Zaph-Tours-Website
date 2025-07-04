@@ -9,6 +9,7 @@ export interface DestinationData {
 
 export const destinationData: DestinationData[] = [
   {
+    
     name: 'Nairobi National Park',
     image: '../nairobi.jpg',
     description: 'A safari in the city with lions, giraffes and more.',

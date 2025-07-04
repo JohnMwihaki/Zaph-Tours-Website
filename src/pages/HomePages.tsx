@@ -19,7 +19,7 @@ export default function HomePage() {
         <Box
           maxWidth="xl"
           sx={{
-            backgroundImage: `linear-gradient(rgba(255, 152, 0, 0.2), rgba(255, 87, 34, 0.2)), url('./background.jpg')`,
+            backgroundImage: `linear-gradient(rgba(255, 152, 0, 0.2), rgba(255, 87, 34, 0.1)), url('./background.jpg')`,
             backgroundSize: "cover",
             backgroundPosition: "center",
             backgroundRepeat: "no-repeat",
@@ -113,11 +113,12 @@ export default function HomePage() {
                 boxShadow: "0 8px 16px rgba(0,0,0,0.3)",
                 objectFit: "cover",
               }}
-            />
+            /> 
           </Box>
         </Box>
 
         {/* about section */}
+
         <Container
           maxWidth="xl"
           sx={{
@@ -151,7 +152,7 @@ export default function HomePage() {
               adipisci nisi iste! Eveniet volu
             </Typography>
 
-            <Stack direction="row" spacing={3} alignItems="center" mt={6}>
+            <Stack   direction={{ xs: "column", sm: "row" }} spacing={3} alignItems="center" mt={6}>
               <Box sx={{ flex: 1 }}>
                 <Typography
                   variant="h4"
@@ -209,7 +210,8 @@ export default function HomePage() {
             </Stack>
 
             <Stack
-              direction="row-reverse"
+              direction={{ xs: "column", md: "row-reverse" }}
+              
               spacing={4}
               alignItems="center"
               mt={6}
@@ -270,7 +272,7 @@ export default function HomePage() {
               </Box>
             </Stack>
 
-            <Stack direction="row" spacing={4} alignItems="center" mt={6}>
+            <Stack direction={{xs:'column',md:'row'}} spacing={4} alignItems="center" mt={6}>
               <Box sx={{ flex: 1 }}>
                 <Typography
                   variant="h4"
@@ -461,6 +463,7 @@ export default function HomePage() {
             Lorem ipsum dolor sit, amet consectetur adipisicing el
           </Typography>
         </Container>
+
         {/*Destination section*/}
         <Container maxWidth="lg" sx={{ my: 6 }}>
           <Typography
@@ -532,7 +535,7 @@ export default function HomePage() {
                   component="div"
                   className="price"
                 >
-                  {dest.price}
+                  ${dest.price}
                 </Typography>
               </Paper>
             ))}
@@ -708,7 +711,7 @@ export default function HomePage() {
               backgroundColor: "transparent",
             }}
           >
-            <Stack direction="row" spacing={0}>
+            <Stack direction="row" spacing={0} sx={{width:{sx:'100%'}}}>
               <TextField
                 placeholder="Enter Email Address"
                 variant="outlined"
@@ -722,6 +725,7 @@ export default function HomePage() {
                   },
                   "& input": {
                     padding: "2px 4px",
+                    color:'red'
                   },
                 }}
                 InputProps={{
@@ -743,6 +747,7 @@ export default function HomePage() {
                   "&:hover": {
                     backgroundColor: "(--amber)",
                   },
+                  
                 }}
               >
                 Subscribe

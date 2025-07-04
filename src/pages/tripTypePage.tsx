@@ -1,4 +1,4 @@
-import { typesCardData} from "../Data/TripCardData";
+import { typesCardData } from "../Data/TripCardData";
 import {
   Card,
   CardMedia,
@@ -13,7 +13,9 @@ import {
 export default function TripPage() {
   return (
     <>
-      <Box sx={{ position: "relative", mb: 6, height: 500, overflow: "hidden" }}>
+      <Box
+        sx={{ position: "relative", mb: 6, height: 500, overflow: "hidden" }}
+      >
         <Box
           sx={{
             position: "absolute",
@@ -49,17 +51,26 @@ export default function TripPage() {
             Experience Magical Safaris
           </Typography>
 
-          <Box sx={{ display: "flex", gap: 1 }}>
-            <Typography sx={{ color: "var(--amber)", fontSize: "2rem", fontWeight: 700 }}>
+          <Box sx={{ display: "flex" }}>
+            <Typography
+              sx={{ color: "var(--amber)", fontSize: "2rem", fontWeight: 700 }}
+            >
               Featured
             </Typography>
-            <Typography sx={{ color: "var(--safari-orange)", fontSize: "2rem", fontWeight: 700 }}>
+            <Typography
+              sx={{
+                color: "var(--safari-orange)",
+                fontSize: "2rem",
+                fontWeight: 700,
+              }}
+            >
               Packages Safaris
             </Typography>
           </Box>
 
           <Typography variant="subtitle1" maxWidth="600px" mt={2}>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Your dream adventure starts here.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Your dream
+            adventure starts here.
           </Typography>
         </Box>
       </Box>
@@ -88,7 +99,14 @@ export default function TripPage() {
                 component="img"
                 image={data.image}
                 alt={data.title}
-                sx={{ height: 200, objectFit: "cover" }}
+                sx={{
+                  height: 200,
+                  objectFit: "cover",
+                  transition: "transform .3s ease-in-out",
+                  "&:hover": {
+                    transform: "scale(1.02)",
+                  },
+                }}
               />
 
               <Box
@@ -110,7 +128,11 @@ export default function TripPage() {
               </Box>
 
               <CardContent>
-                <Typography variant="h6" fontWeight={700} sx={{color:'var(--deep-green)'}}>
+                <Typography
+                  variant="h6"
+                  fontWeight={700}
+                  sx={{ color: "var(--deep-green)" }}
+                >
                   {data.title}
                 </Typography>
 
@@ -119,7 +141,7 @@ export default function TripPage() {
                     <Typography
                       variant="body2"
                       sx={{
-                        fontFamily:'var(--secondary-font)',
+                        fontFamily: "var(--secondary-font)",
                         color: "var(--safari-orange)",
                         fontWeight: 600,
                         mt: 0.5,
@@ -134,40 +156,54 @@ export default function TripPage() {
                   </Tooltip>
                 )}
 
-                <Typography variant="body2" sx={{ my: 1 ,textAlign:'left'}}>
+                <Typography variant="body2" sx={{ my: 1, textAlign: "left" }}>
                   {data.description}
                 </Typography>
 
-              <Box sx={{
-                display:'flex',
-                justifyContent:'space-around',
-                alignItems:'center'
-              }}>
-                  <Tooltip title="Click here to book now" placement="right" arrow>
-                  <Button
-                    variant="contained"
-                    color="primary"
-                    sx={{ mt: 2,backgroundColor:'var(--amber)','&:hover':{
-                      backgroundColor:'var(--golden-yellow)'
-                    } }}
-                    component="a"
+                <Box
+                  sx={{
+                    display: "flex",
+                    justifyContent: "space-around",
+                    alignItems: "center",
+                  }}
+                >
+                  <Tooltip
+                    title="Click here to book now"
+                    placement="right"
+                    arrow
                   >
-                    Book Now
-                  </Button>
-                </Tooltip>
-                  <Tooltip title="Click here to learn more"  arrow>
-                  <Button
-                    variant="contained"
-                    color="primary"
-                    sx={{ mt: 2,backgroundColor:'var(--safari-orange)','&:hover':{
-                      backgroundColor:'var(--golden-yellow)'
-                    } }}
-                    component="a"
-                  >
-                    Learn More
-                  </Button>
-                </Tooltip>
-              </Box>
+                    <Button
+                      variant="contained"
+                      color="primary"
+                      sx={{
+                        mt: 2,
+                        backgroundColor: "var(--amber)",
+                        "&:hover": {
+                          backgroundColor: "var(--golden-yellow)",
+                        },
+                      }}
+                      component="a"
+                    >
+                      Book Now
+                    </Button>
+                  </Tooltip>
+                  <Tooltip title="Click here to learn more" arrow>
+                    <Button
+                      variant="contained"
+                      color="primary"
+                      sx={{
+                        mt: 2,
+                        backgroundColor: "var(--safari-orange)",
+                        "&:hover": {
+                          backgroundColor: "var(--golden-yellow)",
+                        },
+                      }}
+                      component="a"
+                    >
+                      Learn More
+                    </Button>
+                  </Tooltip>
+                </Box>
               </CardContent>
             </Card>
           ))}
